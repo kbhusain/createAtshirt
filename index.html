@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Tees - Animated Apparel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <a href="index.html" class="logo-link">
+                        <h1 class="logo">Cartoon<span>Tees</span></h1>
+                        <p class="tagline">Wear Your Animation</p>
+                    </a>
+                </div>
+
+                <!-- Main navigation -->
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                        <li class="nav-item"><a href="#collections" class="nav-link">Collections</a></li>
+                        <li class="nav-item"><a href="#new-arrivals" class="nav-link">New Arrivals</a></li>
+                        <li class="nav-item"><a href="#sale" class="nav-link">Sale</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
+
+                <!-- User actions -->
+                <div class="user-actions">
+                    <button class="search-toggle" aria-label="Open search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" class="user-icon" aria-label="User account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="cart-icon" aria-label="Shopping cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Search overlay -->
+            <div class="search-overlay">
+                <div class="search-container">
+                    <form class="search-form" role="search">
+                        <input type="search" class="search-input" placeholder="Search for cartoon characters, shows, or styles..." aria-label="Search products">
+                        <button type="submit" class="search-submit" aria-label="Submit search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="search-close" aria-label="Close search">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" class="main-content">
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Your Favorite Cartoons, On Your Favorite Tees</h2>
+                    <p class="hero-subtitle">High-quality shirts featuring classic and modern animated characters</p>
+                    <a href="#collections" class="btn btn-primary">Shop Collections</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.pexels.com/photos/6347892/pexels-photo-6347892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person wearing cartoon character t-shirt smiling" class="hero-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured products -->
+        <section id="featured" class="featured-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Featured Cartoon Tees</h2>
+                    <p class="section-subtitle">Our most popular designs this month</p>
+                </header>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Retro cartoon character t-shirt design" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                            <span class="product-badge">Bestseller</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Retro Toon Classic</h3>
+                            <p class="product-description">Vintage-inspired cartoon character on soft cotton tee</p>
+                            <div class="product-price">
+                                <span class="current-price">$24.99</span>
+                                <span class="original-price">$29.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="1">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/9558699/pexels-photo-9558699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Modern anime style t-shirt design" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Anime Adventure</h3>
+                            <p class="product-description">Popular anime character in action pose design</p>
+                            <div class="product-price">
+                                <span class="current-price">$27.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="2">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/4065905/pexels-photo-4065905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Funny cartoon animal t-shirt design" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                            <span class="product-badge">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Animal Antics</h3>
+                            <p class="product-description">Whimsical cartoon animals in humorous situation</p>
+                            <div class="product-price">
+                                <span class="current-price">$22.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="3">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/9558605/pexels-photo-9558605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Superhero cartoon t-shirt design" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Superhero Squad</h3>
+                            <p class="product-description">Classic superhero team dynamic artwork</p>
+                            <div class="product-price">
+                                <span class="current-price">$26.99</span>
+                                <span class="original-price">$31.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="4">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-footer">
+                    <a href="#" class="btn btn-secondary">View All Featured</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections -->
+        <section id="collections" class="collections-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Cartoon Collections</h2>
+                    <p class="section-subtitle">Browse by theme or character type</p>
+                </header>
+
+                <div class="collections-grid">
+                    <!-- Collection 1 -->
+                    <article class="collection-card">
+                        <div class="collection-image">
+                            <img src="https://images.pexels.com/photos/4065906/pexels-photo-4065906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="90s cartoon characters collection" class="collection-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                        </div>
+                        <div class="collection-info">
+                            <h3 class="collection-title">90s Nostalgia</h3>
+                            <p class="collection-description">Classic cartoons from the golden age of animation</p>
+                            <a href="#" class="btn btn-collection">Explore Collection</a>
+                        </div>
+                    </article>
+
+                    <!-- Collection 2 -->
+                    <article class="collection-card">
+                        <div class="collection-image">
+                            <img src="https://images.pexels.com/photos/4065904/pexels-photo-4065904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Modern anime characters collection" class="collection-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                        </div>
+                        <div class="collection-info">
+                            <h3 class="collection-title">Anime Universe</h3>
+                            <p class="collection-description">Popular Japanese animation characters and series</p>
+                            <a href="#" class="btn btn-collection">Explore Collection</a>
+                        </div>
+                    </article>
+
+                    <!-- Collection 3 -->
+                    <article class="collection-card">
+                        <div class="collection-image">
+                            <img src="https://images.pexels.com/photos/4066289/pexels-photo-4066289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Funny animal cartoons collection" class="collection-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                        </div>
+                        <div class="collection-info">
+                            <h3 class="collection-title">Animal Kingdom</h3>
+                            <p class="collection-description">Cartoon animals, pets, and wildlife characters</p>
+                            <a href="#" class="btn btn-collection">Explore Collection</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section id="new-arrivals" class="new-arrivals-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">New Arrivals</h2>
+                    <p class="section-subtitle">Fresh cartoon designs just added to our collection</p>
+                </header>
+
+                <div class="products-grid products-grid-compact">
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/9558609/pexels-photo-9558609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Space adventure cartoon t-shirt" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                            <span class="product-badge">Just Added</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Space Explorers</h3>
+                            <p class="product-description">Intergalactic cartoon adventure design</p>
+                            <div class="product-price">
+                                <span class="current-price">$25.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="5">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/4065907/pexels-photo-4065907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fantasy cartoon t-shirt design" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                            <span class="product-badge">Just Added</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Fantasy Realm</h3>
+                            <p class="product-description">Magical creatures and fantasy characters</p>
+                            <div class="product-price">
+                                <span class="current-price">$28.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="6">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/9558698/pexels-photo-9558698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Comic book style t-shirt design" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                            <span class="product-badge">Just Added</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Comic Book Heroes</h3>
+                            <p class="product-description">Bold comic book style superhero artwork</p>
+                            <div class="product-price">
+                                <span class="current-price">$26.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="7">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/4065908/pexels-photo-4065908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Retro video game cartoon t-shirt" class="product-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                            <span class="product-badge">Just Added</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pixel Pioneers</h3>
+                            <p class="product-description">Retro video game character pixel art design</p>
+                            <div class="product-price">
+                                <span class="current-price">$23.99</span>
+                            </div>
+                            <button class="btn btn-add-to-cart" data-product-id="8">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale section -->
+        <section id="sale" class="sale-section">
+            <div class="container">
+                <div class="sale-content">
+                    <div class="sale-text">
+                        <h2 class="sale-title">Summer Cartoon Sale</h2>
+                        <p class="sale-subtitle">Up to 40% off selected cartoon tees</p>
+                        <p class="sale-description">Stock up on your favorite animated characters at discounted prices. Limited time offer!</p>
+                        <a href="#" class="btn btn-sale">Shop Sale Items</a>
+                    </div>
+                    <div class="sale-image">
+                        <img src="https://images.pexels.com/photos/6347891/pexels-photo-6347891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Person holding cartoon t-shirt with sale tag" class="sale-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">About Cartoon Tees</h2>
+                    <p class="section-subtitle">Why choose our animated apparel</p>
+                </header>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/9558606/pexels-photo-9558606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Close-up of high-quality cartoon t-shirt print" class="about-img" onerror="this.onerror=null; this.src='https://placehold.co/800x600.png?text=Image+Unavailable';">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-title">Premium Quality Meets Animation Art</h3>
+                        <p>At Cartoon Tees, we combine high-quality apparel with officially licensed cartoon artwork. Each design is carefully selected and printed using eco-friendly, long-lasting techniques that preserve vibrant colors wash after wash.</p>
+                        <ul class="about-features">
+                            <li class="about-feature">
+                                <i class="fas fa-tshirt"></i>
+                                <span>100% premium cotton or cotton-blend fabrics</span>
+                            </li>
+                            <li class="about-feature">
+                                <i class="fas fa-palette"></i>
+                                <span>Vibrant, fade-resistant digital printing</span>
+                            </li>
+                            <li class="about-feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>Eco-friendly, water-based inks</span>
+                            </li>
+                            <li class="about-feature">
+                                <i class="fas fa-award"></i>
+                                <span>Officially licensed artwork when available</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Get Animated Updates</h2>
+                    <p class="newsletter-subtitle">Subscribe to our newsletter for new designs, sales, and cartoon news</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your email address" aria-label="Email address for newsletter" required>
+                            <button type="submit" class="btn btn-newsletter">Subscribe</button>
+                        </div>
+                        <p class="form-disclaimer">By subscribing, you agree to our Privacy Policy and consent to receive updates from Cartoon Tees.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Cartoon<span>Tees</span></h3>
+                    <p class="footer-description">Bringing your favorite animated characters to life on high-quality apparel since 2015.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Follow us on Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick links -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#featured" class="footer-link">Featured Tees</a></li>
+                        <li><a href="#collections" class="footer-link">Collections</a></li>
+                        <li><a href="#new-arrivals" class="footer-link">New Arrivals</a></li>
+                        <li><a href="#sale" class="footer-link">Sale Items</a></li>
+                        <li><a href="#" class="footer-link">All Products</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer service -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Shipping Info</a></li>
+                        <li><a href="#" class="footer-link">Returns & Exchanges</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Wholesale</a></li>
+                        <li><a href="#" class="footer-link">Licensing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Cartoon Tees. All rights reserved. Cartoon characters are trademarks of their respective owners.</p>
+                <ul class="legal-links">
+                    <li><a href="#" class="legal-link">Privacy Policy</a></li>
+                    <li><a href="#" class="legal-link">Terms of Service</a></li>
+                    <li><a href="#" class="legal-link">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
